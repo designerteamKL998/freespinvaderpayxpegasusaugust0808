@@ -1,0 +1,621 @@
+﻿<html style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duit Now</title>
+    <link href="https://qrpayin.vaderpay.net/Content/css?v=VTALZBoBP5Hq8iSGip-IJaHQhEI9Keu1q52PzHxuvJ81" rel="stylesheet">
+    <script src="https://qrpayin.vaderpay.net/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+    <script src="js/jquery.js"></script>
+    <link href="css/promo-css.css" rel="stylesheet" />
+
+</head>
+
+<body class="body" style="background-color:#f2f2f2; background-image:url('image/bg-payment.jpg'); background-position: center top;">
+    <div class="row" style="margin:0;">
+        <div class="Pegasus__ctn">
+            <div class="Pegasus__modal-wrapper" id="Pegasus-modal">
+                <div class="Pegasus__modal-ctn active" id="Pegasus__modal_1" style="background-image: url('image/bg-pop.jpg');">
+                    <div class="Pegasus__modal-ctn_img">
+                        <img src="image/img-ad-banner.png" alt="Pegasus banner" />
+                    </div>
+                    <div class="Pegasus__modal-ctn_wrapper-1">
+                        <img src="image/coin-01.png" alt="coin1" class="coin1 bounce2" />
+                        <img src="image/coin-02.png" alt="coin2" class="coin2 bounce1" />
+                        <div class="promo-head" id="promoHead">
+                            <img src="image/giftCode-en.png" alt="fullyclaim">
+
+                            <div class="claim-title">
+                                Don't miss tomorrow's<br>
+                                gift code distribution period:
+                            </div>
+                            <div class="claim-time">
+                                1:00 PM – 8:30 PM
+                            </div>
+                            <div class="claim-desc">
+                                First Come, First Served. <br>While stocks last!
+                            </div>
+                        </div>
+
+                        <style>
+                            /*fully claim*/
+                            .fully-claim {
+                                text-align: center;
+                                color: #260008;
+                                font-weight: 900;
+                            }
+
+
+                            .claim-title {
+                                margin-top: 10px;
+                                font-size: 20px;
+                                line-height: 1.3;
+                                font-weight: 900;
+                            }
+
+
+                            .claim-time {
+                                margin-top: 10px;
+                                color: #ff0000;
+                                font-size: 30px;
+                                font-weight: 900;
+                                line-height: 1;
+                                text-shadow: 2px 2px 0 #ffffff, 3px 3px 5px rgba(0,0,0,.25);
+                            }
+
+
+                            .claim-desc {
+                                margin-top: 10px;
+                                font-size: 18px;
+                                font-weight: 900;
+                                color: #250008;
+                            }
+                        </style>
+
+
+
+
+                        <button class="button-redeem">
+                            <span class="button-light"></span>
+                            <span class="button-light-bottom"></span>
+                            <span class="button-light-right"></span>
+                            <span class="button-light-right-bottom"></span>
+                            <span class="button-redeem-shadow"></span>
+                            <span class="button-redeem-edge"></span>
+                            <span id="howtoredeem" class="button-redeem-front text">
+                                <img class="btn-play" src="image/play-button.png">
+                                Click To Watch <br />Redemption Guide
+                            </span>
+                        </button>
+                        <style>
+                            .btn-play {
+                                width: 30px;
+                                height: 30px;
+                                display: block;
+                            }
+
+                            .button-redeem {
+                                position: relative;
+                                border: none;
+                                background: transparent;
+                                padding: 0;
+                                cursor: pointer;
+                                outline-offset: 4px;
+                                transition: filter 250ms;
+                                user-select: none;
+                                -webkit-user-select: none;
+                                touch-action: manipulation;
+                                width: fit-content; /* changed */
+                                margin: 10px auto; /* center */
+                                display: block;
+                                animation: redeemPulse 1.5s infinite;
+                            }
+
+                            .button-redeem-shadow {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50px;
+                                background: #FFC107;
+                                will-change: transform;
+                                transform: translateY(2px);
+                                transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+                            }
+
+                            .button-redeem-edge {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50px;
+                                background: linear-gradient(to left, #FF9800 0%, #FFC107 8%, #FFEB3B 92%, #FFC107 100%);
+                            }
+
+                            .button-redeem-front {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 10px;
+                                position: relative;
+                                padding: 10px 35px; /* control length */
+                                min-width: 300px; /* button width */
+                                border-radius: 50px;
+                                color: #333;
+                                background: #FFC107;
+                                transform: translateY(-4px);
+                                transition: transform 600ms cubic-bezier(.3,.7,.4,1);
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+
+                            .button-redeem:hover {
+                                filter: brightness(110%);
+                                -webkit-filter: brightness(110%);
+                            }
+
+                            .button-1:hover .button-redeem-front {
+                                transform: translateY(-6px);
+                                transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+                            }
+
+                            .button-redeem:active .button-redeem-front {
+                                transform: translateY(-2px);
+                                transition: transform 34ms;
+                            }
+
+                            .button-redeem:hover .button-redeem-shadow {
+                                transform: translateY(4px);
+                                transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+                            }
+
+                            .button-redeem:active .button-redeem-shadow {
+                                transform: translateY(1px);
+                                transition: transform 34ms;
+                            }
+
+                            .button-redeem:focus:not(:focus-visible) {
+                                outline: none;
+                            }
+
+
+                            /* all light lines */
+                            .button-light,
+                            .button-light-bottom,
+                            .button-light-right,
+                            .button-light-right-bottom,
+                            .button-redeem::before,
+                            .button-redeem::after {
+                                position: absolute;
+                                width: 25px;
+                                height: 7px;
+                                background: #ffb000;
+                                border-radius: 20px;
+                                z-index: 10;
+                                animation: lightBlink 1s infinite;
+                            }
+
+
+                            /* LEFT TOP */
+                            .button-redeem::before {
+                                content: "";
+                                left: -35px;
+                                top: 5px;
+                                transform: rotate(40deg);
+                            }
+
+
+                            /* LEFT MIDDLE */
+                            .button-light {
+                                left: -42px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+
+
+                            /* LEFT BOTTOM */
+                            .button-light-bottom {
+                                left: -35px;
+                                bottom: 5px;
+                                transform: rotate(-40deg);
+                            }
+
+
+                            /* RIGHT TOP */
+                            .button-redeem::after {
+                                content: "";
+                                right: -35px;
+                                top: 5px;
+                                transform: rotate(-40deg);
+                            }
+
+
+                            /* RIGHT MIDDLE */
+                            .button-light-right {
+                                right: -42px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+
+
+                            /* RIGHT BOTTOM */
+                            .button-light-right-bottom {
+                                right: -35px;
+                                bottom: 5px;
+                                transform: rotate(40deg);
+                            }
+
+
+                            @keyframes lightBlink {
+                                0%,100% {
+                                    opacity: 1;
+                                    scale: 1;
+                                }
+
+                                50% {
+                                    opacity: .25;
+                                    scale: .8;
+                                }
+                            }
+                        </style>
+
+                        <div class="promo-footer">
+                            <button id="Pegasus_tnc">Terms and Conditions Apply</button>
+                            <div style="background: linear-gradient(90deg, transparent, #4f2124, transparent);width: 100%;">
+                                <img src="image/img-powerby.png" alt="powered by Pegasus" style="max-width:120px; width:100%;" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_1">
+                        <img src="image/button-x.png" alt="button close" />
+                    </div>
+
+                </div>
+                <div class="Pegasus__modal-ctn" id="Pegasus__modal_2">
+                    <div class="Pegasus__modal-ctn_wrapper-2">
+                        <div class="promo_term_img">
+                            <img src="image/banner993x360en.jpg">
+                        </div>
+                        <div class="promo_term">
+                            <h4><b>VADERPAY × PEGASUS Cross Over Free Spin Promo</b></h4>
+
+                            <b style="color: #ff0000;">Deposit More, Unlock Bigger Free Spin Rewards! </b>
+                           
+                            <table class="promo-table">
+                                <thead>
+                                    <tr>
+                                        <th>Deposit Amount</th>
+                                        <th>Gift Code Prize</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>RM100 – RM199</td>
+                                        <td>RM2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RM200 – RM499</td>
+                                        <td>RM5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RM500 – RM999</td>
+                                        <td>RM10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RM1000 and above</td>
+                                        <td>RM25</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <p><b>Terms & Conditions</b></p>
+                            <ol>
+                                <li>
+                                    <b>Campaign Overview</b>
+                                    <ul>
+                                        <li>
+                                            The <b>VADERPAY × PEGASUS</b> Cross Over Free Spin Promo is jointly organized by <b>VADERPAY</b> (Payment Gateway) and <b>PEGASUS</b> (Game Provider) to reward eligible players with Free Spin Gift Codes based on qualifying deposit amounts during the campaign period.
+                                        </li>
+                                        <li>
+                                            By participating in this Campaign, players agree to be bound by the following Terms & Conditions.
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Campaign Period</b>
+                                    <ul>
+                                        <li>Promotion Period: <b>4 June 2026 – 10 June 2026 (GMT+8).</b></li>
+                                        <li>The Campaign will run for <b>seven (7) consecutive days.</b></li>
+                                        <li>The organizer reserves the right to amend, extend, shorten, suspend, or terminate the Campaign period at any time without prior notice.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Eligibility</b>
+                                    <ul>
+                                        <li>This Campaign is open to eligible registered players under all 998Bet white label B2C platforms.</li>
+                                        <li>Players must make deposits via the official campaign payment channel: VaderPay (VDPc1).</li>
+                                        <li>Players must fulfill the required deposit amount during the campaign period to qualify.</li>
+                                        <li>Only deposits made within the official campaign period will be counted.</li>
+                                        <li>Employees, agents, and affiliates of the organizer may be excluded from participation.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Campaign Mechanism</b>
+                                    <ul>
+                                        <li>Players will receive Gift Code rewards based on their qualifying deposit amount.</li>
+                                        <li>Each player is entitled to redeem one (1) Gift Code per day only.</li>
+                                        <li>Eligibility will reset daily at 00:00:00 (GMT+8). A new qualifying deposit is required for the next redemption.</li>
+                                        <li>Gift Codes are distributed on a first come, first served basis and are subject to daily quota limits.</li>
+                                        <li>Gift Codes must be entered and redeemed within the validity period stated by the organizer.</li>
+                                        <li>Rewards will be credited instantly upon successful redemption of the Gift Code.</li>
+                                        <li>Each Gift Code is unique and valid for one-time redemption only.</li>
+                                        <li>Unclaimed or unused rewards will not be carried forward unless otherwise stated by the organizer.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Qualifying Deposits & Reward Structure </b>
+
+                                    <table class="promo-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Deposit Amount</th>
+                                                <th>Gift Code Prize</th>
+                                                <th>Daily Quota</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>RM100 – RM199</td>
+                                                <td>RM2 <br />【1.90~2.16】</td>
+                                                <td>180</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM200 – RM499</td>
+                                                <td>RM5 <br />【4.81~5.20】</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM500 – RM999</td>
+                                                <td>RM10<br />【9.75~10.42】</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RM1000 and above</td>
+                                                <td>RM25【25.12~26.28】</td>
+                                                <td>25</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <style>
+                                        .promo-table {
+                                            width: 100%;
+                                            max-width: 700px;
+                                            margin: 15px auto;
+                                            border-collapse: collapse;
+                                            overflow: hidden;
+                                            border-radius: 12px;
+                                            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+                                        }
+
+                                            .promo-table th {
+                                                background: linear-gradient(to bottom, #ddd, #ccc);
+                                                color: #1a1a1a;
+                                                font-size: 14px;
+                                                font-weight: bold;
+                                                padding: 15px;
+                                                text-align: center;
+                                            }
+
+                                            .promo-table td {
+                                                background: #ffffff;
+                                                color: #333;
+                                                padding: 12px;
+                                                text-align: center;
+                                                border-bottom: 1px solid #e5e5e5;
+                                            }
+
+                                            .promo-table tr:nth-child(even) td {
+                                                background: #f8f8f8;
+                                            }
+
+                                            .promo-table tr:hover td {
+                                                background: #fff7d6;
+                                                transition: 0.3s;
+                                            }
+
+                                        @media (max-width: 768px) {
+                                            .promo-table th,
+                                            .promo-table td {
+                                                padding: 10px;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    </style>
+                                </li>
+                                <li>
+                                    <b>Participated Games</b>
+                                    <ul>
+                                        <li>Only the following PEGASUS games are eligible for this promotion: </li>
+                                        <li>
+                                            Any attempt to manipulate the Campaign mechanism may result in:
+                                            <ol>
+                                                <ul>
+                                                    <li>Jalapeño 2</li>
+                                                    <li>Jungle Wild Kid</li>
+                                                    <li>Mahjong Gold</li>
+                                                    <li>Mahjong Gold 2</li>
+                                                    <li>Penguin Expedition</li>
+                                                </ul>
+                                            </ol>
+                                        </li>
+                                        <li>Free Spin Gift Codes redeemed under this Campaign are only valid for use on the participating games listed above.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Reward Fair Usage Policy</b>
+                                    <ul>
+                                        <li>Gift Codes are non-transferable, non-exchangeable, and non-convertible to cash unless otherwise stated by the organizer.</li>
+                                        <li>
+                                            Players are responsible for entering the correct Gift Code during redemption via Pegasus games.
+                                        </li>
+                                        <li>May refer to the <a href="javascript:void(0);" id="howtoredeem2"> demo video</a> as attached in TNC landing page for further information.</li>
+                                        <li>Expired, invalid, or previously redeemed Gift Codes will not be reissued.</li>
+                                        <li>The organizer shall not be responsible for any lost, leaked, shared, or unauthorized use of Gift Codes.</li>
+                                        <li>The organizer reserves the right to conduct account verification and transaction reviews at any time.</li>
+                                        <li>
+                                            Any attempt to manipulate the Campaign mechanism may result in:
+                                            <ol>
+                                                <ul>
+                                                    <li>Reward forfeiture</li>
+                                                    <li>Account suspension</li>
+                                                    <li>Permanent disqualification from current and future promotions</li>
+                                                </ul>
+                                            </ol>
+                                        </li>
+                                        <li>The organizer reserves the right to amend, suspend, or terminate this Campaign and its Terms & Conditions at any time without prior notice.</li>
+                                        <li>The organizer’s decision on all matters relating to this Campaign shall be final and binding.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_2">
+                        <img src="image/button-x.png" alt="button close" />
+                    </div>
+                </div>
+                <div class="Pegasus__modal-ctn" id="Pegasus__modal_3">
+                    <div class="Pegasus__modal-ctn_wrapper-3">
+                        <div class="slideshow-container slideshow-container--video">
+                            <video class="tutorialVideo" controls playsinline preload="metadata">
+                                <source src="video/freespinvidoEN.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <br>
+
+                    </div>
+                    <style>
+                        .slideshow-container {
+                            max-width: 1000px;
+                            position: relative;
+                            margin: auto;
+                        }
+
+                        .slideshow-container--video {
+                            width: 100%;
+                            max-width: 100%;
+                            overflow: hidden;
+                        }
+
+                            .slideshow-container--video .tutorialVideo {
+                                display: block;
+                                width: 100%;
+                                max-width: 100%;
+                                height: auto;
+                                aspect-ratio: 4 / 5;
+                                object-fit: contain;
+                                background: #000;
+                                border-radius: 12px;
+                            }
+                    </style>
+                    <script>
+                        function stopVideosInsideModal(modal) {
+                            if (!modal) return;
+
+                            modal.querySelectorAll("video").forEach(function (video) {
+                                video.pause();
+                                video.currentTime = 0;
+                            });
+                        }
+
+                        document.addEventListener("click", function (e) {
+                            const closeBtn = e.target.closest(".Pegasus__modal-close");
+
+                            if (!closeBtn) return;
+
+                            const modal = closeBtn.closest(".Pegasus__modal-ctn");
+                            stopVideosInsideModal(modal);
+                        });
+
+                        const pegasusModal3 = document.getElementById("Pegasus__modal_3");
+
+                        const pegasusObserver = new MutationObserver(function () {
+                            const style = window.getComputedStyle(pegasusModal3);
+
+                            if (
+                                style.display === "none" ||
+                                pegasusModal3.classList.contains("hide") ||
+                                pegasusModal3.classList.contains("is-hidden")
+                            ) {
+                                stopVideosInsideModal(pegasusModal3);
+                            }
+                        });
+
+                        if (pegasusModal3) {
+                            pegasusObserver.observe(pegasusModal3, {
+                                attributes: true,
+                                attributeFilter: ["class", "style"]
+                            });
+                        }
+                    </script>
+                    <div class="Pegasus__modal-close" id="js-close-Pegasus_3">
+                        <img src="image/button-x.png" alt="button close" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('#Pegasus_tnc').on('click', function () {
+                $('#Pegasus__modal_1').removeClass('active');
+                $('#Pegasus__modal_2').addClass('active');
+
+                // reset TNC scroll to top
+                $('.Pegasus__modal-ctn_wrapper-2').scrollTop(0);
+            });
+            $('#howtoredeem').on('click', function () {
+                $('#Pegasus__modal_1').removeClass('active');
+                $('#Pegasus__modal_3').addClass('active');
+
+                // always start Step 1
+                slideIndex = 1;
+                showSlides(slideIndex);
+            });
+            $('#howtoredeem2').on('click', function () {
+                $('#Pegasus__modal_2').removeClass('active');
+                $('#Pegasus__modal_3').addClass('active');
+            });
+            $('#js-close-Pegasus_2').on('click', function () {
+                $('#Pegasus__modal_1').addClass('active');
+                $('#Pegasus__modal_2').removeClass('active');
+
+                // reset after close
+                $('.Pegasus__modal-ctn_wrapper-2').scrollTop(0);
+            });
+            $('#js-close-Pegasus_3').on('click', function () {
+                $('#Pegasus__modal_1').addClass('active');
+                $('#Pegasus__modal_3').removeClass('active');
+            });
+
+            $('#js-close-Pegasus_1').on('click', function () {
+                $('#Pegasus-modal').fadeOut('slow');
+            });
+
+            $(document).ready(function () {
+                $('#Pegasus-modal').fadeIn('slow');
+            });
+
+            $(document).ready(function () {
+                $('#copyButton').click(function () {
+                    var copyText = $('#promoCode')[0];
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand('copy');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
