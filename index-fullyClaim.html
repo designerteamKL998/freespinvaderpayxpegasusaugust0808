@@ -15,6 +15,11 @@
         <div class="Pegasus__ctn">
             <div class="Pegasus__modal-wrapper" id="Pegasus-modal">
                 <div class="Pegasus__modal-ctn active" id="Pegasus__modal_1" style="background-image: url('image/bg-pop.jpg');">
+                    <!-- Corner Decorations -->
+                    <img src="image/img-corner2.png" class="corner corner-tl">
+                    <img src="image/img-corner2.png" class="corner corner-tr">
+                    <img src="image/img-corner2.png" class="corner corner-bl">
+                    <img src="image/img-corner2.png" class="corner corner-br">
                     <div class="Pegasus__modal-ctn_img">
                         <img src="image/img-ad-banner.png" alt="Pegasus banner" />
                     </div>
@@ -36,40 +41,7 @@
                             </div>
                         </div>
 
-                        <style>
-                            /*fully claim*/
-                            .fully-claim {
-                                text-align: center;
-                                color: #260008;
-                                font-weight: 900;
-                            }
-
-
-                            .claim-title {
-                                margin-top: 10px;
-                                font-size: 20px;
-                                line-height: 1.3;
-                                font-weight: 900;
-                            }
-
-
-                            .claim-time {
-                                margin-top: 10px;
-                                color: #ff0000;
-                                font-size: 30px;
-                                font-weight: 900;
-                                line-height: 1;
-                                text-shadow: 2px 2px 0 #ffffff, 3px 3px 5px rgba(0,0,0,.25);
-                            }
-
-
-                            .claim-desc {
-                                margin-top: 10px;
-                                font-size: 18px;
-                                font-weight: 900;
-                                color: #250008;
-                            }
-                        </style>
+                        
 
 
 
@@ -86,179 +58,7 @@
                                 Click To Watch <br />Redemption Guide
                             </span>
                         </button>
-                        <style>
-                            .btn-play {
-                                width: 30px;
-                                height: 30px;
-                                display: block;
-                            }
-
-                            .button-redeem {
-                                position: relative;
-                                border: none;
-                                background: transparent;
-                                padding: 0;
-                                cursor: pointer;
-                                outline-offset: 4px;
-                                transition: filter 250ms;
-                                user-select: none;
-                                -webkit-user-select: none;
-                                touch-action: manipulation;
-                                width: fit-content; /* changed */
-                                margin: 10px auto; /* center */
-                                display: block;
-                                animation: redeemPulse 1.5s infinite;
-                            }
-
-                            .button-redeem-shadow {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 50px;
-                                background: #FFC107;
-                                will-change: transform;
-                                transform: translateY(2px);
-                                transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
-                            }
-
-                            .button-redeem-edge {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 50px;
-                                background: linear-gradient(to left, #FF9800 0%, #FFC107 8%, #FFEB3B 92%, #FFC107 100%);
-                            }
-
-                            .button-redeem-front {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                gap: 10px;
-                                position: relative;
-                                padding: 10px 35px; /* control length */
-                                min-width: 300px; /* button width */
-                                border-radius: 50px;
-                                color: #333;
-                                background: #FFC107;
-                                transform: translateY(-4px);
-                                transition: transform 600ms cubic-bezier(.3,.7,.4,1);
-                                font-size: 14px;
-                                font-weight: bold;
-                            }
-
-                            .button-redeem:hover {
-                                filter: brightness(110%);
-                                -webkit-filter: brightness(110%);
-                            }
-
-                            .button-1:hover .button-redeem-front {
-                                transform: translateY(-6px);
-                                transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-                            }
-
-                            .button-redeem:active .button-redeem-front {
-                                transform: translateY(-2px);
-                                transition: transform 34ms;
-                            }
-
-                            .button-redeem:hover .button-redeem-shadow {
-                                transform: translateY(4px);
-                                transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
-                            }
-
-                            .button-redeem:active .button-redeem-shadow {
-                                transform: translateY(1px);
-                                transition: transform 34ms;
-                            }
-
-                            .button-redeem:focus:not(:focus-visible) {
-                                outline: none;
-                            }
-
-
-                            /* all light lines */
-                            .button-light,
-                            .button-light-bottom,
-                            .button-light-right,
-                            .button-light-right-bottom,
-                            .button-redeem::before,
-                            .button-redeem::after {
-                                position: absolute;
-                                width: 25px;
-                                height: 7px;
-                                background: #ffb000;
-                                border-radius: 20px;
-                                z-index: 10;
-                                animation: lightBlink 1s infinite;
-                            }
-
-
-                            /* LEFT TOP */
-                            .button-redeem::before {
-                                content: "";
-                                left: -35px;
-                                top: 5px;
-                                transform: rotate(40deg);
-                            }
-
-
-                            /* LEFT MIDDLE */
-                            .button-light {
-                                left: -42px;
-                                top: 50%;
-                                transform: translateY(-50%);
-                            }
-
-
-                            /* LEFT BOTTOM */
-                            .button-light-bottom {
-                                left: -35px;
-                                bottom: 5px;
-                                transform: rotate(-40deg);
-                            }
-
-
-                            /* RIGHT TOP */
-                            .button-redeem::after {
-                                content: "";
-                                right: -35px;
-                                top: 5px;
-                                transform: rotate(-40deg);
-                            }
-
-
-                            /* RIGHT MIDDLE */
-                            .button-light-right {
-                                right: -42px;
-                                top: 50%;
-                                transform: translateY(-50%);
-                            }
-
-
-                            /* RIGHT BOTTOM */
-                            .button-light-right-bottom {
-                                right: -35px;
-                                bottom: 5px;
-                                transform: rotate(40deg);
-                            }
-
-
-                            @keyframes lightBlink {
-                                0%,100% {
-                                    opacity: 1;
-                                    scale: 1;
-                                }
-
-                                50% {
-                                    opacity: .25;
-                                    scale: .8;
-                                }
-                            }
-                        </style>
+                        
 
                         <div class="promo-footer">
                             <button id="Pegasus_tnc">Terms and Conditions Apply</button>
@@ -390,52 +190,7 @@
                                         </tbody>
                                     </table>
 
-                                    <style>
-                                        .promo-table {
-                                            width: 100%;
-                                            max-width: 700px;
-                                            margin: 15px auto;
-                                            border-collapse: collapse;
-                                            overflow: hidden;
-                                            border-radius: 12px;
-                                            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-                                        }
-
-                                            .promo-table th {
-                                                 background: linear-gradient(to bottom, #2a6496, #2a6496);
-                                                color: #fff;
-                                                font-size: 14px;
-                                                font-weight: bold;
-                                                padding: 15px;
-                                                text-align: center;
-                                            }
-
-                                            .promo-table td {
-                                                background: #ffffff;
-                                                color: #333;
-                                                padding: 12px;
-                                                text-align: center;
-                                                border-bottom: 1px solid #e5e5e5;
-                                                font-size: 14px;
-                                            }
-
-                                            .promo-table tr:nth-child(even) td {
-                                                background: #f8f8f8;
-                                            }
-
-                                            .promo-table tr:hover td {
-                                                background: #fff7d6;
-                                                transition: 0.3s;
-                                            }
-
-                                        @media (max-width: 768px) {
-                                            .promo-table th,
-                                            .promo-table td {
-                                                padding: 10px;
-                                                font-size: 12px;
-                                            }
-                                        }
-                                    </style>
+                                    
                                 </li>
                                 <li>
                                     <b>Participated Games</b>
@@ -470,36 +225,7 @@
                                                 </div>
 
                                             </div>
-                                            <style>
-                                                .games-box {
-                                                    display: flex;
-                                                    flex-wrap: wrap;
-                                                    justify-content: center;
-                                                    gap: 20px;
-                                                    padding: 18px;
-                                                    background: #fff8d9;
-                                                    border: 1px solid #f5a44d;
-                                                    border-radius: 10px;
-                                                    padding-left: 5px;
-                                                    margin: 10px auto;
-                                                }
-
-                                                .game-item {
-                                                    width: 28%;
-                                                    text-align: center;
-                                                }
-
-                                                    .game-item img {
-                                                        width: 100px;
-                                                        border-radius: 10px;
-                                                    }
-
-                                                    /* Last 2 items stay centered */
-                                                    .game-item:nth-child(4),
-                                                    .game-item:nth-child(5) {
-                                                        width: 35%;
-                                                    }
-                                            </style>
+                                            
                                         </li>
                                         <li>Free Spin Gift Codes redeemed under this Campaign are only valid for use on the participating games listed above.</li>
                                     </ul>
