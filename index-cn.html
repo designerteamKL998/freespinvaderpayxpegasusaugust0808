@@ -356,3 +356,28 @@
                 // reset after close
                 $('.Pegasus__modal-ctn_wrapper-2').scrollTop(0);
             });
+            $('#js-close-Pegasus_3').on('click', function () {
+                $('#Pegasus__modal_1').addClass('active');
+                $('#Pegasus__modal_3').removeClass('active');
+            });
+
+            $('#js-close-Pegasus_1').on('click', function () {
+                $('#Pegasus-modal').fadeOut('slow');
+            });
+
+            $(document).ready(function () {
+                $('#Pegasus-modal').fadeIn('slow');
+            });
+
+            $(document).ready(function () {
+                $('#copyButton').click(function () {
+                    var copyText = $('#promoCode')[0];
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    document.execCommand('copy');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
