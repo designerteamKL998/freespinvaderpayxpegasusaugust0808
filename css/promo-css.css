@@ -1,7 +1,7 @@
         .Pegasus__modal-wrapper { display: none; content: ''; background: rgba(0, 0, 0, 0.8); top: 0; bottom: 0; left: 0; right: 0; z-index: 100; position: fixed; height: 100vh; }
         .Pegasus__modal-ctn { background-color: #fff; position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 420px; z-index: 40; padding: 20px; }
-        .Pegasus__modal-close { position: absolute; top: -10px; right: -10px; border-radius: 50px; background-color: #fff; max-width: 45px; max-height: 45px; display: flex; justify-content: center; align-items: center; padding: 20px; font-weight: bold; font-size: 20px; cursor: pointer; box-shadow:2px 2px 4px rgba(0,0,0,0.4);}
-
+        .Pegasus__modal-close { position: absolute; top: -10px; right: -10px; border-radius: 50px; background-color: #fff; max-width: 45px; max-height: 45px; display: flex; justify-content: center; align-items: center; padding: 20px; font-weight: bold; font-size: 20px; cursor: pointer; box-shadow:2px 2px 4px rgba(0,0,0,0.4); transition: transform 0.2s ease, filter 0.2s ease;}
+        .Pegasus__modal-close:hover { transform: scale(1.08); filter: brightness(1.15);}
 .font-red {color: #e3d90d;}
 
         .d-flex { display: flex; }
